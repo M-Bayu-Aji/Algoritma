@@ -1,121 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma bersama ipal</title>
+</head>
+<body>
     <script>
-      // no1
-      let bil1 = 40;
-      let bil2 = 20;
-      let bil3 = 20;
+// menulis js secara internal
+// codingan js ditulis disimi
 
-      if(bil1>bil2 && bil1>bil3) {
-          console.log(bil1)
-      }else if (bil2>bil1 && bil2>bil3) {
-          console.log(bil2)
-      }else if (bil3>bil1 && bil3>bil2) {
-          console.log(bil3)
-      }else if (bil1==bil2 && bil1==bil3) {
-          console.log("semua bilangan sama")
-      }
+// penjumlahan 2 bilangan
+// cara membuat variabel
+// keyword let/const namaVariabel = hasil
 
-      //no2
-        let angka = prompt('masukkan angka');
-  
-        if(angka%2 == 0 && angka > 0) {
-            console.log("postif genap");
-        } else if (angka%2 == 1 && angka > 0) {
-            console.log("positif ganjil");
-        } else if (angka%2 == 0 && angka < 0) {
-            console.log("Negatif Genap");
-        } else {
-            console.log("Negatif Ganjil")
-        };
+// input atau masukan
+        let a = 10;
+        let b = 20;
+        let c = 30;
 
-    // no3
-      let saklar = 1;
-      let ON = 1;
-      if(saklar == 1) {
-          console.log("ON")
-      } else if (saklar = 0) {
-          console.log ("OFF")
-      } else {
-          console.log("Masukan angka 1 atau 0")
-      }
-      //atau yang bawah
+        // cara cek type data
+        console.log(typeof(a))
 
-      // let bil = prompt('Masukkan angka');
-      // if(bil % 2 == 0) {
-      //     console.log("genap")
-      // } else {
-      //     console.log("ganjil")
-      // }
-      // if(bil < 0 ) {
-      //     console.log("Negatif")
-      // } else {
-      //     console.log ("Positif")
-      // };
+// Proses
+        let hasil = (a + b + c);
 
-      //no4
-      let barang1 = 20000;
-      let barang2 = 40000;
-      let barang3 = 50000;
+// output
+        console.log('Hasil', hasil)
 
-      let total = barang1 + barang2 + barang3;
-      let diskon = 10/100 * total;
-      if (total > 100000) {
-          console.log(total-diskon)
-      }
-      else if (total < 100000) {
-          console.log(total)
-      }
+// mencari luas segitiga 
+        let alas = 200;
+        let tinggi = 120;
+        
+        let segitiga = alas*tinggi*.5;
 
-    //  jika ingin mengetahui per barang setelah di diskon :
+        console.log('luas = ', segitiga);
 
-    // let barang1 = prompt('Masukkan harga barang 1');
-    //     // Menghitung total belanja
-    //     let total = barang1;
-    //     // Menerapkan diskon jika total belanja lebih dari 100000
-    //     if (total > 100000) {
-    //         let diskon = 10/100 * total;
-    //         console.log("Total belanja setelah diskon: Rp. " + (total - diskon));
-    //     } else {
-    //         console.log("Total belanja: Rp. " + total);
-    //     }
+// mencari keliling persegi panjang, jika diketahu luas nya
+// luas persegi 64, kelilingnya brp
+        // input
 
-      // no5
-      let jamLembur = prompt('Masukkan jam lembur');
+        let luas = 64;
+        let sisi = Math.sqrt(luas);
+        console.log(`sisinya adalah ${sisi}`)
+        // proses
 
-      if (jamLembur < 6) {
-        gajiLembur = 100000;
-      } else if (jamLembur == 6) {
-        gajiLembur = 200000;
-      } else {
-        gajiLembur = 300000;
-      }
+        let keliling = sisi*4;
+        // output
 
-      console.log('Gaji lembur: Rp. ' + gajiLembur);
+        console.log(`keliling dari persegi dengan luas ${luas}  dan sisinya ${sisi} adalah: ${keliling}`)
+        // nilai akhir
+        let pabp = 70;
+        let mtk = 82;
+        let dpk = 77;
 
-        //no6
-        // Menerima masukan tinggi air
-        let tinggiAir = prompt('Masukkan tinggi air (dalam meter)');
+        let rata = (pabp + mtk + dpk) /3;
 
-        // Mengubah masukan menjadi bilangan desimal
-        tinggiAir = parseFloat(tinggiAir);
-
-        // Menentukan kondisi pintu air berdasarkan tinggi air
-        if (tinggiAir <= 500.0) {
-            console.log("Status: Aman");
-        } else if (tinggiAir <= 600.0) {
-            console.log("Status: Waspada");
-        } else if (tinggiAir <= 650.0) {
-            console.log("Status: Siaga 2");
-        } else {
-            console.log("Status: Siaga 1");
-        }
+        console.log
     </script>
-  </body>
+</body>
 </html>
