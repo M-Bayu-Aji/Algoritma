@@ -76,7 +76,7 @@
 
     //  jika ingin mengetahui per barang setelah di diskon :
 
-    // let barang1 = prompt('Masukkan harga barang 1');
+    // let barang1 = prompt('Masu=kkan harga barang 1');
     //     // Menghitung total belanja
     //     let total = barang1;
     //     // Menerapkan diskon jika total belanja lebih dari 100000
@@ -104,15 +104,12 @@
         // Menerima masukan tinggi air
         let tinggiAir = prompt('Masukkan tinggi air (dalam meter)');
 
-        // Mengubah masukan menjadi bilangan desimal
-        tinggiAir = parseFloat(tinggiAir);
-
         // Menentukan kondisi pintu air berdasarkan tinggi air
-        if (tinggiAir <= 500.0) {
+        if (tinggiAir <= 500) {
             console.log("Status: Aman");
-        } else if (tinggiAir <= 600.0) {
+        } else if (tinggiAir <= 600) {
             console.log("Status: Waspada");
-        } else if (tinggiAir <= 650.0) {
+        } else if (tinggiAir <= 650) {
             console.log("Status: Siaga 2");
         } else {
             console.log("Status: Siaga 1");

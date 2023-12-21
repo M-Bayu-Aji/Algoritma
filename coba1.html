@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anakan</title>
+</head>
+<body>
+    <script>
+        // penerimaan siswa baru Versi Tegar
+        let nilai = prompt('Masukkan Nilai UN');
+
+        if (nilai <=100 && nilai >=90) {
+            console.log('Selamat anda lolos')
+        } else if (nilai >= 80 && nilai < 90) {
+            jalur = prompt('Pilih Jalur Pendaftran Raport atau Prestasi');
+            if (jalur == ('Raport')) {
+                console.log ('Anda Memilih Jalur Rapot')
+            } else if (jalur == ('Prestasi')) {
+                console.log('Anda Memilih Jalur Prestasi')
+            } else;
+        } else {
+            console.log('Anda Harus Test Mandiri');
+            hasiltes = prompt('Masukkan Hasil Tes Mandiri Anda');
+            if (hasiltes >=79 && hasiltes <=100) {
+                console.log('Hasil Tes Anda Lolos')
+            } else {
+                console.log('Anda Gagal')
+            }
+        }
+
+    // versi bu duma 
+    let angka = 10;
+    let tesmandiri = 60;
+    let jalur = 'raport';
+
+    if (angka >= 90 && angka <=100) {
+        console.log('Nilai Sempurna')
+    } else if (angka >= 75 && angka <= 100) {
+        if (jalur = 'raport') {
+            console.log('anda lulus niai jalur raport')
+        } else if ( jalur = 'Prestasi') {
+            console.log('Anda lulud nilai jalur raport')
+        }
+    } else {
+        if (tesmandiri >= 80) {
+            console.log('Anda Lulus')
+        } else {
+            console.log('Anda Gagal AwokAwok')
+        }
+    }
+    </script>
+</body>
+</html>

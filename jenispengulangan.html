@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // looping
+      for (let i = 0; i <= 10; i++) {
+          console.log('Sesuatui', i)
+      }
+
+      // looping ganjil
+      for (let c = 2; c <= 10; c +=2) {
+          console.log('Sesuatuc', c)
+      }
+
+      // looping genap
+      for (let d = 1; d <= 10; d +=2) {
+          console.log('Sesuatud', d)
+      }
+
+      // while
+      let a = 1
+      // x sama dengan 1
+      while (a <= 10) {
+          // lalu jika x nya kurang dari 10
+          // maka x++ dan munculkan consolog ke layar
+          console.log('sesuatua', a)
+          a++
+      }
+
+      // while genap
+      let b = 0
+      // x sama dengan 1
+      while (b <= 10) {
+          // lalu jika x nya kurang dari 10
+          // maka x++ dan munculkan consolog ke layar
+          console.log('sesuatub', b)
+          b +=2
+      }
+
+      // while ganjil
+      let x = 1
+      // x sama dengan 1
+      while (x <= 10) {
+          // lalu jika x nya kurang dari 10
+          // maka x++ dan munculkan consolog ke layar
+          console.log('sesuatux', x)
+          x +=2
+      }
+
+      // Do While
+      let e = 1
+      // do adalah lakukan apa dulu
+      do {
+          console.log('Sesuatue', e)
+          e++
+      } while (e <= 10)
+
+      // Do While Genap
+      let f = 0
+      // do adalah lakukan apa dulu
+      do {
+          console.log('Sesuatuf', f)
+          f +=2
+      } while (f <= 10)
+
+      // Do While Ganjil
+      let y = 1
+      // do adalah lakukan apa dulu
+      do {
+          console.log('Sesuatuy', y)
+          y +=2
+      } while (y <= 10)
+
+      // contoh faktorial
+      function hitungFaktorial(n) {
+        let hasilFaktorial = 1;
+
+        for (let i = 1; i <= n; i++) {
+          hasilFaktorial *= i;
+        }
+
+        return hasilFaktorial;
+      }
+
+      // Contoh penggunaan
+      const n = prompt('Masukkan Angka Faktorial');
+      const hasilFaktorial = hitungFaktorial(n);
+
+      console.log(`Faktorial dari ${n} adalah: ${hasilFaktorial}`);
+    </script>
+  </body>
+</html>
